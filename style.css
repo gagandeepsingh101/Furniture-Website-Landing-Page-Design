@@ -1,4 +1,4 @@
-html::-webkit-scrollbar{
+html::-webkit-scrollbar {
   display: none;
 }
 
@@ -9,198 +9,197 @@ html::-webkit-scrollbar{
 
 /* Home Page */
 #homepage {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-direction: column;
-    width: 100vw;
-    height: 120vh;
-  }
-  
-  /* navbar */
-  #navbar {
-    z-index: 100;
-    color: white;
-    position: fixed;
-    top: 0%;
-    background-color: #f74b95;
-    padding: 5vh 10vw;
-    height: 10vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* navbar left */
-  #navbar #navLogo {
-    font-size: 40px;
-  }
-  
-  /* nav bar right */
-  #navbar #itemContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-  }
-  #navbar #itemContainer .links {
-    font-weight: 500;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-  
-    margin: 0 1.5vw;
-  }
-  #navbar #itemContainer .links:hover,
-  #navbar #itemContainer .links:active {
-    border-bottom: 2px solid white;
-    padding-bottom: 5px;
-  }
-
-  /* Main content of homepage */
-  #main-section {
-    position: relative;
-    display: flex;
-    align-items: first center;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 110vh;
-    width: inherit;
-    background: url(https://wallpapercave.com/wp/wp1941913.jpg);
-    background-position: top;
-    background-size: cover;
-  }
-  
-  #main-section #homepage-quotes {
-    position: absolute;
-    top: 8vh;
-    color: #cb3e7b;
-    text-align: center;
-    height: 5vh;
-    font-size: 70px;
-    width: 70vw;
-  }
-  #main-section #homepage-text {
-    position: absolute;
-    top: 35vh;
-    color: #cb3e7b;
-    font-size: 20px;
-    height: 5vh;
-    text-align: center;
-    width: 40vw;
-  }
-  #main-section #shopping-btn {
-    color: white;
-    position: absolute;
-    top: 47vh;
-    background-color: #cb3e7b;
-    border: none;
-    border-radius: 20px;
-    text-transform: uppercase;
-    padding: 0px 1.4vw;
-    font-size: 25px;
-    width: 14vw;
-    height: 7vh;
-    border: 4px solid #cb3e7b;
-  }
-  #main-section #shopping-btn:hover {
-    animation-name: border-animation;
-    animation-timing-function:linear;
-    animation-duration: 0.4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-  }
-  @keyframes border-animation {
-    25% {
-      border-bottom: 4px solid white;
-    }
-    50% {
-      border-left: 4px solid white;
-    }
-    75% {
-      border-top: 4px solid white;
-    }
-    100% {
-      border-right: 4px solid white;
-    }
-  }
-  
-
-  /* Design about section */
-#about {
-  position: relative;
   display: flex;
-  justify-content: center;
-  height: 100vh;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
   width: 100vw;
+  height: 120vh;
 }
 
+/* navbar */
+#navbar {
+  z-index: 100;
+  color: white;
+  position: fixed;
+  top: 0%;
+  background-color: #f74b95;
+  padding: 5vh 10vw;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* navbar left */
+#navbar #navLogo {
+  font-size: 40px;
+}
+
+/* nav bar right */
+#navbar #itemContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+#navbar #itemContainer .links {
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+
+  margin: 0 1.5vw;
+}
+#navbar #itemContainer .links:hover,
+#navbar #itemContainer .links:active {
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+/* Main content of homepage */
+#main-section {
+  position: relative;
+  display: flex;
+  align-items: first center;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 110vh;
+  width: inherit;
+  background: url(https://wallpapercave.com/wp/wp1941913.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+#main-section #homepage-quotes {
+  position: absolute;
+  top: 8vh;
+  color: #cb3e7b;
+  text-align: center;
+  height: 5vh;
+  font-size: 70px;
+  width: 70vw;
+}
+#main-section #homepage-text {
+  position: absolute;
+  top: 35vh;
+  color: #cb3e7b;
+  font-size: 20px;
+  height: 5vh;
+  text-align: center;
+  width: 40vw;
+}
+#main-section #shopping-btn {
+  color: white;
+  position: absolute;
+  top: 47vh;
+  background-color: #cb3e7b;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  padding: 0px 1.4vw;
+  font-size: 25px;
+  width: 14vw;
+  height: 7vh;
+  border: 4px solid #cb3e7b;
+}
+#main-section #shopping-btn:hover {
+  animation-name: border-animation;
+  animation-timing-function: linear;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes border-animation {
+  25% {
+    border-bottom: 4px solid white;
+  }
+  50% {
+    border-left: 4px solid white;
+  }
+  75% {
+    border-top: 4px solid white;
+  }
+  100% {
+    border-right: 4px solid white;
+  }
+}
+
+/* Design about section */
+#about-sec {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180vh;
+  width: 100vw;
+  background-color: #fca9cd;
+}
 
 /* short info design */
-#basic-info{
+#basic-info {
+  position: relative;
   padding: 0 2.5vw;
   border-radius: 2vw;
-  position: absolute;
   top: -15vh;
   height: 30vh;
   width: 70vw;
   background-color: #cb3e7b;
 }
-#basic-info #info-list{
- display: flex;
- align-items: center;
- justify-content: space-evenly;
- color: white;
- list-style: none;
+#basic-info #info-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  list-style: none;
 }
-#basic-info #info-list .info{
+#basic-info #info-list .info {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 30vw;
-  height: 30vh;
+  width: 25vw;
+  height: 25vh;
 }
-#basic-info #info-list .info .info-heading{
+#basic-info #info-list .info .info-heading {
   font-size: 45px;
   margin-bottom: 10px;
-  
 }
-#basic-info #info-list .info .info-text{
+#basic-info #info-list .info .info-text {
   font-weight: 500;
   font-size: 25px;
   width: 8vw;
 }
-hr{
+hr {
   transform: translate(90deg);
   height: 20vh;
   width: 0.1vw;
   background-color: white;
 }
 
-#categories{
-
+#categories {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 20vh;
   width: 80vw;
 }
-#categories-heading{
+#categories-heading {
+  color: #cb3e7b;
   font-size: 40px;
   letter-spacing: 2px;
   margin-bottom: 15vh;
 }
-#categories-list{
+#categories-list {
+  position: relative;
   padding: 0 2vw;
   display: flex;
   width: inherit;
   justify-content: space-between;
   list-style: none;
 }
-.list{
+.list {
   position: relative;
   height: 23vh;
   width: 15vw;
@@ -208,19 +207,69 @@ hr{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:5vh 1vw;
+  padding: 5vh 1vw;
   border-radius: 20px;
   background-color: #f74b95;
 }
-.list-text{
+.list-text {
   color: white;
   padding-top: 10vh;
   font-weight: 400;
   font-size: 25px;
 }
-.list-img{
+.list-img {
   top: -10vh;
   position: absolute;
-  width: 12vw; 
+  width: 12vw;
   height: 25vh;
+}
+#about {
+
+  color:white;
+  margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+/* About main section design */
+#about-img {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 100%;
+  width: 40vw;
+  background-image: url(https://cdn.shopify.com/s/files/1/0363/7129/products/S03_3_Seater_Velvet_07_Burgundy.jpg?v=1511366511);
+  background-position: center;
+  background-size: cover;
+}
+#about-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  height: 100%;
+  width: 50vw;
+  justify-content: center;
+}
+#about-heading{
+  font-size: 60px;
+  margin-bottom: 5vh;
+}
+#about-detail-info{
+  font-size: 25px;
+}
+.points{
+  margin-top: 5vh;
+}
+.point-heading{
+  font-size: 30px;
+}
+.ri-checkbox-circle-fill{
+  font-size: 40px;
+margin-right: 20px;
+  color:#cb3e7b ;
+}
+.point-info{
+ font-size: 20px;
+ line-height: 3vh;
+ padding:2vh 4vw; 
 }
