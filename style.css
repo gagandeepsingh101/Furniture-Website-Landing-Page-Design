@@ -8,6 +8,7 @@ html::-webkit-scrollbar {
   -webkit-scroll: none;
 }
 body {
+  overflow-x: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,7 +234,6 @@ hr {
   width: 100vw;
 }
 
-
 /* About main section design */
 #about-img {
   border-top-right-radius: 30px;
@@ -276,7 +276,6 @@ hr {
   padding: 2vh 4vw;
 }
 
-
 /* other product design */
 #other-product {
   padding: 5vh 7vw;
@@ -315,7 +314,7 @@ hr {
   background: url(https://webstockreview.net/images/flower-pot-png-6.png);
   bottom: 0;
   left: 50%;
-  transform: translate(-50%,-10%);
+  transform: translate(-50%, -10%);
   width: 10vw;
   height: 25vh;
   background-size: cover;
@@ -341,33 +340,74 @@ hr {
   background: transparent;
   border: 2px solid white;
 }
-#review-section{
+#review-section {
   width: 90vw;
   height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#review-heading{
+#review-heading {
   font-size: 50px;
 }
-#review-info{
+#review-info {
   display: flex;
   align-items: center;
   width: 90vw;
   justify-content: space-evenly;
 }
-.review-list{
+.review-list {
   background-color: #f74b95;
   width: 25vw;
   border: 3px solid white;
   border-radius: 2vw;
   padding: 2vh 2vw;
 }
-.review-list:nth-child(2){
+.review-list:nth-child(2) {
   border: 2px transparent;
- background-color: #cb3e7b;
+  background-color: #cb3e7b;
 }
-.review-detail{
+.review-detail {
   margin-top: 1.5vh;
+}
+#discount-section {
+  position: relative;
+  margin-top: 10vh;
+  height: 40vh;
+  width: 84vw;
+  border-radius: 3vw;
+  background: url(https://i.pinimg.com/originals/5e/bb/f5/5ebbf58d459c8777b884d5e79fb70bac.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#overlay{
+  position: absolute;
+  border-radius: 3vw;
+  height: inherit;
+  width: inherit;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#discount-title{
+  font-size: 40px;
+  padding: 2.5vh 0;
+  z-index: 100;
+  text-transform: uppercase;
+}
+#discount-detail{
+  z-index: 100;
+  font-size: 20px;
+  width: 40vw;
+  margin-bottom: 5vh;
+}
+
+#join-now{
+  border: none;
+  background-color: #cb3e7b;
+  border-radius: 30px;
+  padding: 2vh 4vw;
+  z-index: 100;
+  text-transform: uppercase;
 }
