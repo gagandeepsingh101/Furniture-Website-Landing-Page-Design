@@ -3,8 +3,17 @@ html::-webkit-scrollbar {
 }
 
 * {
+  color: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   -webkit-scroll: none;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 99;
+  background-color: #fca9cd;
 }
 
 /* Home Page */
@@ -20,7 +29,6 @@ html::-webkit-scrollbar {
 /* navbar */
 #navbar {
   z-index: 100;
-  color: white;
   position: fixed;
   top: 0%;
   background-color: #f74b95;
@@ -47,9 +55,7 @@ html::-webkit-scrollbar {
 #navbar #itemContainer .links {
   font-weight: 500;
   font-size: 20px;
-  color: white;
   text-decoration: none;
-
   margin: 0 1.5vw;
 }
 #navbar #itemContainer .links:hover,
@@ -91,7 +97,6 @@ html::-webkit-scrollbar {
   width: 40vw;
 }
 #main-section #shopping-btn {
-  color: white;
   position: absolute;
   top: 47vh;
   background-color: #cb3e7b;
@@ -134,7 +139,6 @@ html::-webkit-scrollbar {
   align-items: center;
   height: 180vh;
   width: 100vw;
-  background-color: #fca9cd;
 }
 
 /* short info design */
@@ -151,7 +155,6 @@ html::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: white;
   list-style: none;
 }
 #basic-info #info-list .info {
@@ -200,6 +203,7 @@ hr {
   list-style: none;
 }
 .list {
+  background-color: #cb3e7b;
   position: relative;
   height: 23vh;
   width: 15vw;
@@ -209,10 +213,8 @@ hr {
   justify-content: center;
   padding: 5vh 1vw;
   border-radius: 20px;
-  background-color: #f74b95;
 }
 .list-text {
-  color: white;
   padding-top: 10vh;
   font-weight: 400;
   font-size: 25px;
@@ -224,8 +226,6 @@ hr {
   height: 25vh;
 }
 #about {
-
-  color:white;
   margin-top: 7vh;
   display: flex;
   align-items: center;
@@ -238,7 +238,7 @@ hr {
   border-bottom-right-radius: 30px;
   height: 100%;
   width: 40vw;
-  background-image: url(https://cdn.shopify.com/s/files/1/0363/7129/products/S03_3_Seater_Velvet_07_Burgundy.jpg?v=1511366511);
+  background-image: url(https://i.pinimg.com/originals/88/21/04/8821040214609a882cf47b71696bade0.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -250,26 +250,90 @@ hr {
   width: 50vw;
   justify-content: center;
 }
-#about-heading{
+#about-heading {
   font-size: 60px;
   margin-bottom: 5vh;
 }
-#about-detail-info{
+#about-detail-info {
   font-size: 25px;
 }
-.points{
+.points {
   margin-top: 5vh;
 }
-.point-heading{
+.point-heading {
   font-size: 30px;
 }
-.ri-checkbox-circle-fill{
+.ri-checkbox-circle-fill {
   font-size: 40px;
-margin-right: 20px;
-  color:#cb3e7b ;
+  margin-right: 20px;
+  color: #cb3e7b;
 }
-.point-info{
- font-size: 20px;
- line-height: 3vh;
- padding:2vh 4vw; 
+.point-info {
+  font-size: 20px;
+  line-height: 3vh;
+  padding: 2vh 4vw;
+}
+
+#other-product {
+  padding: 5vh 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  background-color: #cb3e7b;
+  width: 100vw;
+  height: 50vh;
+  margin-top: 10vh;
+}
+#table-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background: url(https://www.pinclipart.com/picdir/big/148-1486200_big-image-white-table-png-hd-clipart.png);
+  width: 70vw;
+  height: 10vh;
+  transform: translate(-50%, 0%);
+  background-size: cover;
+  background-position: top;
+}
+#light-img {
+  position: absolute;
+  background: url(https://i.pinimg.com/originals/03/ae/6c/03ae6c25e7bb19e01067f07b8ea5df37.png);
+  top: 0;
+  width: 30vw;
+  height: 45vh;
+  right: -5%;
+  background-size: cover;
+  background-position: bottom;
+}
+#flower-img {
+  position: absolute;
+  background: url(https://webstockreview.net/images/flower-pot-png-6.png);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,-10%);
+  width: 10vw;
+  height: 25vh;
+  background-size: cover;
+  background-position: bottom;
+}
+
+#product-heading {
+  font-size: 40px;
+  width: 40vw;
+  margin-bottom: 2vh;
+}
+
+#product-detail {
+  font-size: 20px;
+  width: 40vw;
+  margin-bottom: 2vh;
+}
+#product-explore-btn {
+  font-size: 20px;
+  padding: 1vh 1vw;
+  border-radius: 20px;
+  width: 20vw;
+  background: transparent;
+  border: 2px solid white;
 }
