@@ -57,4 +57,72 @@ html::-webkit-scrollbar{
     border-bottom: 2px solid white;
     padding-bottom: 5px;
   }
+
+  /* Main content of homepage */
+  #main-section {
+    position: relative;
+    display: flex;
+    align-items: first center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 110vh;
+    width: inherit;
+    background: url(https://wallpapercave.com/wp/wp1941913.jpg);
+    background-position: top;
+    background-size: cover;
+  }
+  
+  #main-section #homepage-quotes {
+    position: absolute;
+    top: 8vh;
+    color: #cb3e7b;
+    text-align: center;
+    height: 5vh;
+    font-size: 70px;
+    width: 70vw;
+  }
+  #main-section #homepage-text {
+    position: absolute;
+    top: 35vh;
+    color: #cb3e7b;
+    font-size: 20px;
+    height: 5vh;
+    text-align: center;
+    width: 40vw;
+  }
+  #main-section #shopping-btn {
+    color: white;
+    position: absolute;
+    top: 47vh;
+    background-color: #cb3e7b;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 0px 1.4vw;
+    font-size: 25px;
+    width: 14vw;
+    height: 7vh;
+    border: 4px solid #cb3e7b;
+  }
+  #main-section #shopping-btn:hover {
+    animation-name: border-animation;
+    animation-timing-function:linear;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes border-animation {
+    25% {
+      border-bottom: 4px solid white;
+    }
+    50% {
+      border-left: 4px solid white;
+    }
+    75% {
+      border-top: 4px solid white;
+    }
+    100% {
+      border-right: 4px solid white;
+    }
+  }
   
