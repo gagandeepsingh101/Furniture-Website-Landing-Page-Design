@@ -126,3 +126,56 @@ html::-webkit-scrollbar{
     }
   }
   
+
+  /* Design about section */
+#about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/* short info design */
+#basic-info{
+  padding: 0 2.5vw;
+  border-radius: 2vw;
+  position: absolute;
+  top: -15vh;
+  height: 30vh;
+  width: 70vw;
+  background-color: #cb3e7b;
+}
+#basic-info #info-list{
+ display: flex;
+ align-items: center;
+ justify-content: space-evenly;
+ color: white;
+ list-style: none;
+}
+#basic-info #info-list .info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 30vw;
+  height: 30vh;
+}
+#basic-info #info-list .info .info-heading{
+  font-size: 45px;
+  margin-bottom: 10px;
+  
+}
+#basic-info #info-list .info .info-text{
+  font-weight: 500;
+  font-size: 25px;
+  width: 8vw;
+}
+hr{
+  transform: translate(90deg);
+  height: 20vh;
+  width: 0.1vw;
+  background-color: white;
+}
