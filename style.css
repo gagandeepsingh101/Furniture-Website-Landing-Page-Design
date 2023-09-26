@@ -232,6 +232,8 @@ hr {
   height: 100vh;
   width: 100vw;
 }
+
+
 /* About main section design */
 #about-img {
   border-top-right-radius: 30px;
@@ -274,6 +276,8 @@ hr {
   padding: 2vh 4vw;
 }
 
+
+/* other product design */
 #other-product {
   padding: 5vh 7vw;
   display: flex;
@@ -336,4 +340,34 @@ hr {
   width: 20vw;
   background: transparent;
   border: 2px solid white;
+}
+#review-section{
+  width: 90vw;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#review-heading{
+  font-size: 50px;
+}
+#review-info{
+  display: flex;
+  align-items: center;
+  width: 90vw;
+  justify-content: space-evenly;
+}
+.review-list{
+  background-color: #f74b95;
+  width: 25vw;
+  border: 3px solid white;
+  border-radius: 2vw;
+  padding: 2vh 2vw;
+}
+.review-list:nth-child(2){
+  border: 2px transparent;
+ background-color: #cb3e7b;
+}
+.review-detail{
+  margin-top: 1.5vh;
 }
