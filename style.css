@@ -29,7 +29,7 @@ body {
 
 /* navbar */
 #navbar {
-  z-index: 100;
+  z-index: 101;
   position: fixed;
   top: 0%;
   background-color: #f74b95;
@@ -190,10 +190,9 @@ hr {
   width: 80vw;
 }
 #categories-heading {
-  color: #cb3e7b;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 2px;
-  margin-bottom: 15vh;
+  margin-bottom: 20vh;
 }
 #categories-list {
   position: relative;
@@ -373,7 +372,7 @@ hr {
 #discount-section {
   position: relative;
   margin-top: 10vh;
-  height: 40vh;
+  height: 50vh;
   width: 84vw;
   border-radius: 3vw;
   background: url(https://i.pinimg.com/originals/5e/bb/f5/5ebbf58d459c8777b884d5e79fb70bac.jpg);
@@ -381,33 +380,120 @@ hr {
   background-size: cover;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-#overlay{
+#overlay {
   position: absolute;
   border-radius: 3vw;
   height: inherit;
   width: inherit;
   background-color: rgba(0, 0, 0, 0.4);
 }
-#discount-title{
+#discount-title {
   font-size: 40px;
   padding: 2.5vh 0;
   z-index: 100;
   text-transform: uppercase;
 }
-#discount-detail{
+#discount-detail {
   z-index: 100;
   font-size: 20px;
   width: 40vw;
   margin-bottom: 5vh;
 }
 
-#join-now{
+#join-now {
   border: none;
   background-color: #cb3e7b;
   border-radius: 30px;
   padding: 2vh 4vw;
   z-index: 100;
   text-transform: uppercase;
+}
+
+/* footer-design */
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70vh;
+  width: 100vw;
+  background-color: #cb3e7b;
+  margin-top: 10vh;
+  padding: 5vh 0;
+}
+
+/* footer section-1 design */
+#footer-section-1 {
+  margin-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sec1-heading {
+  height: 10vh;
+  font-size: 40px;
+  width: 40vw;
+  margin: 0 15vw 0 2vw;
+}
+#start-btn,
+#sale-btn {
+  margin-right: 2vw;
+  border-radius: 50px;
+  font-weight: 900;
+  border: none;
+  font-size: 20px;
+  color: #cb3e7b;
+  height: 8vh;
+  width: 12vw;
+}
+
+
+/* footer section 2 design */
+#footer-section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10vh 5vw;
+}
+#part1 {
+  width: 30vw;
+}
+#part1-heading {
+  font-size: 40px;
+  margin: 2vh 0;
+}
+#part1-text {
+  font-size: 25px;
+  line-height: 4vh;
+}
+
+#part2,
+#part3,
+#part4 {
+  width: 15vw;
+}
+#part2-heading,
+#part3-heading,
+#part4-heading {
+  font-size: 20px;
+  margin-bottom: 2vh;
+}
+#part2-list,
+#part3-list,
+#part4-list {
+  list-style: none;
+}
+.part-items-2,
+.part-items-3,
+.part-items-4 {
+  margin: 0.5vh 0;
+  border-bottom: 2px solid transparent;
+  padding: 0.5vh 0;
+}
+.part-items-2:hover,
+.part-items-3:hover {
+  width: fit-content;
+  border-bottom: 2px solid white;
 }
